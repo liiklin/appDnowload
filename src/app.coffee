@@ -22,13 +22,8 @@ app.get "/", (req, res) ->
 
 app.get "/download" , (req, res) ->
   baseFilePath = "static/files/"
-  iosFile = "SNAP.ipa"
-  apkFile = "7ipr-release.apk"
+  apkFile = "app-snapEnvSevenipr-release.apk"
 
-  # if req.useragent.isAndroid
-  #   res.download("#{baseFilePath}/#{apkFile}")
-  # else
-  #   res.download("#{baseFilePath}/#{iosFile}")
   res.download("#{baseFilePath}/#{apkFile}")
 
 server = app.listen 3000, () ->
