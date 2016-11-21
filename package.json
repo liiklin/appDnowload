@@ -1,0 +1,24 @@
+{
+  "name": "appdnowload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/app.js",
+  "scripts": {
+    "dev": "npm run compile && supervisor app/app.js",
+    "compile": "coffee -c -b -m -o app/ src/",
+    "watchWeb": "coffee -c -b -w -m -o static/js srcWeb/",
+    "watch": "coffee -c -w -b -m -o app/ src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-useragent": "^1.0.4",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.11.1",
+    "supervisor": "^0.11.0"
+  }
+}
