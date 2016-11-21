@@ -4,7 +4,7 @@
   "description": "",
   "main": "app/app.js",
   "scripts": {
-    "dev": "npm run compile && node app/app.js",
+    "start": "npm run compile && node app/app.js",
     "dev": "npm run compile && supervisor app/app.js",
     "compile": "coffee -c -b -m -o app/ src/",
     "watchWeb": "coffee -c -b -w -m -o static/js srcWeb/",
