@@ -16,15 +16,8 @@ app.set "view engine", "pug"
 app.use useragent.express()
 
 app.get "/", (req, res) ->
-  resObj =
-    title:"七弦琴app下载页面"
-  res.render "index" ,resObj
-
-app.get "/download" , (req, res) ->
-  baseFilePath = "static/files/"
-  apkFile = "app-snapEnvSevenipr-release.apk"
-
-  res.download "#{baseFilePath}/#{apkFile}"
+  hotappUrl = "http://2bai.co/11477762"
+  res.redirect hotappUrl
 
 server = app.listen 3000, () ->
   host = server.address().address

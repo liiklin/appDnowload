@@ -13,3 +13,9 @@ npm install && npm run dev
 ```
 npm install && npm run start
 ```
+
+
+## Todo
+- [ ]改为跳转到对应驱动下载页面
+- [ ]添加手机厂商app商城自动下载
+- [ ]识别useragent
