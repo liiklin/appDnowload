@@ -20,7 +20,7 @@ app.use useragent.express()
   # res.redirect hotappUrl
 app.get '/', (req, res) ->
   res.render 'index',
-    title: '下载app'
+    title: '欢迎使用七弦琴APP'
   return
 
 server = app.listen 3000, () ->
