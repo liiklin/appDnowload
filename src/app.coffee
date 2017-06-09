@@ -15,9 +15,13 @@ app.set "view engine", "pug"
 # useragent
 app.use useragent.express()
 
-app.get "/", (req, res) ->
-  hotappUrl = "http://2bai.co/11477762"
-  res.redirect hotappUrl
+# app.get "/", (req, res) ->
+  # hotappUrl = "http://2bai.co/11477762"
+  # res.redirect hotappUrl
+app.get '/', (req, res) ->
+  res.render 'index',
+    title: '下载app'
+  return
 
 server = app.listen 3000, () ->
   host = server.address().address

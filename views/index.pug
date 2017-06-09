@@ -3,23 +3,7 @@ html(lang="zh-CN")
   meta(charset="utf-8")
   title!= title
   meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
-  link(rel='stylesheet', href='static/css/bootstrap.min.css', type='text/css')
-  link(rel='stylesheet', href='static/css/normalize.css', type='text/css')
-
   script(type='text/javascript' src='static/js/jquery.min.js')
   script(type='text/javascript' src="static/js/index.js")
 
 body
-  div(
-    style="height:100px;"
-  )
-  div.container-fluid
-    div(
-      class="col-md-12 text-center"
-    )
-      button(
-          type="button"
-          class="btn btn-primary"
-          id="download"
-          onClick="downloadFile('/download')"
-      ) 下载App
